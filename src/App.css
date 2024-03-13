@@ -1,0 +1,11 @@
+#root {
+  font-size: x-large;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.lista {
+  background-color: blue;
+  border-radius: 4px;
+  padding: 8px;
+}
