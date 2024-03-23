@@ -2,11 +2,10 @@ import Root from "../Root";
 import ErrorPage from "../ErrorPage";
 import Home from "../pages/Home";
 import About from "../pages/About";
-import Association from "../pages/Association";
-import Don from "../pages/Don";
-import Benevole from "../pages/Benevole";
-import Event from "../pages/Event";
-import Zone from "../pages/Zone";
+import Mameno from "../pages/Mameno";
+import Control from "../pages/Control";
+import Admin from "../pages/Admin";
+import Thanks from "../pages/Thanks";
 
 const path = [
   {
@@ -23,24 +22,20 @@ const path = [
         element: <About />,
       },
       {
-        path: "associations",
-        element: <Association />,
+        path: "mameno",
+        element: <Mameno />,
       },
       {
-        path: "don",
-        element: <Don />,
+        path: "controle",
+        element: <Control />,
       },
       {
-        path: "benevole",
-        element: <Benevole />,
+        path: "admin",
+        element: <Admin />,
       },
       {
-        path: "event",
-        element: <Event />,
-      },
-      {
-        path: "association/:id",
-        element: <Zone />,
+        path: "thanks",
+        element: <Thanks />,
       },
     ],
   },

@@ -35,33 +35,44 @@ export default function Header() {
   const btn = useRef();
 
   return (
-    <Navbar disableAnimation isBordered>
+    <Navbar disableAnimation>
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle ref={btn} />
       </NavbarContent>
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
-          <Logo size="w-20" />
+          <Logo size="w-28" />
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
-          <Logo size="w-20" />
+          <Logo size="w-32" />
         </NavbarBrand>
         <NavItem to="/">Accueil</NavItem>
-        <NavItem to="about">À propos de nous </NavItem>
-        <NavItem to="associations">Les Associations </NavItem>
-        <NavItem to="benevole">Bénévole</NavItem>
-        <NavItem to="event">Event</NavItem>
+        <NavItem to="about">À propos</NavItem>
       </NavbarContent>
 
       <NavbarContent justify="end">
         <NavbarItem>
           <Link
-            to="don"
-            className="text-warning bg-orange-100 rounded-lg px-2 py-2"
+            to="controle"
+            className="text-warning bg-orange-100 rounded-lg px-2 py-2 flex items-center gap-1"
           >
-            Faire un Don
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="16" r="1" />
+              <rect x="3" y="10" width="18" height="12" rx="2" />
+              <path d="M7 10V7a5 5 0 0 1 10 0v3" />
+            </svg>
+            Admin
           </Link>
         </NavbarItem>
       </NavbarContent>
