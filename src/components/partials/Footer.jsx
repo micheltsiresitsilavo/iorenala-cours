@@ -1,10 +1,8 @@
-import Logo from "../Logo";
-import ToggleTheme from "../ToggleTheme";
 const Footer = () => {
   return (
     <div className="mt-16 border-t border-gray-100 pt-8">
       <p className="text-center text-xs/relaxed text-gray-500">
-        © Company 2022. All rights reserved.
+        © Company 2024. All rights reserved.
         <br />
         Created with
         <a
