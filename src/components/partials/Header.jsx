@@ -27,11 +27,8 @@ export default function Header() {
   const menuItems = [
     { menu: "Accueil", link: "/" },
     { menu: "À propos", link: "about" },
-    { menu: "Les Associations", link: "associations" },
-    { menu: "Bénévole", link: "benevole" },
-    { menu: "Event", link: "event" },
+    { menu: "Hiditra", link: "mameno" },
   ];
-
   const btn = useRef();
 
   return (
