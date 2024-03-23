@@ -33,7 +33,7 @@ const Control = () => {
   return (
     <div className="flex justify-center max-w-sm mx-auto h-screen items-center">
       <form onSubmit={checkPwd} className="w-full space-y-2">
-        {pwd}
+
         <h1 className="text-xl font-semibold">Code d'Accèes</h1>
         {error && (
           <h1 className="text-xsm px-4 py-5 text-center rounded-md border-2 border-red-300 bg-red-100 text-red-400 font-semibold">
